@@ -1,0 +1,35 @@
+<htmlt>
+  <head>
+    <title>Pre Tag Example</title>
+    <style type="text/css">
+       .smallbox {
+         border:1px solid black;
+         background-color:#ababab;
+         width:58px;
+       }
+
+       .largebox{
+         border:1px solid black;
+         width:200px;
+         height:200px;
+         background-color: #bababa;
+       }
+    </style>
+  </head>
+  <body>
+    <div>
+       <div class="smallbox" onclick="change('d1')" id="d1">IIPS</div>
+       <div class="smallbox" onclick="change('d2')" id="d2">IMS</div>
+       <div class="smallbox" onclick="change('d3')" id="d3">IET</div>
+       <div class="largebox" id="d4"></div>
+    </div>
+    <script type="text/javascript">
+       function change(d){
+         var x=document.getElementByid(d);
+         var y=document.getElementsByid(d4);
+         y.innerhtml=x.innerhtml;
+
+       }
+    </script>
+  </body>
+<html>
